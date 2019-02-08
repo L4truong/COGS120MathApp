@@ -1,8 +1,47 @@
+<!doctype html>
+
 <html>
 <head>
-	<title>Test Page</title>
+	<title>Math App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
 </head>
 <body>
-Begin here (or replace this with any static code already written).
+	<div data-role = "page" id = "pageone">
+    <div data-role = "header">
+        <h1>Home</h1>
+    </div>
+
+    <h1>Enrolled Classes:</h1>
+    
+    <div class="class" id="class1">
+        <a href="class.html" class="thumbnail">
+        <h3>Algebra</h3> 
+    </a>
+    </div>
+
+    <div class="class" id="class2">
+        <a href="class.html" class="thumbnail">
+        <h3>Arithmetic</h3> 
+    </a>
+    </div>
+
+    <form id="addClassForm" role="form" method="get" action="/add">
+        <h3>Add a class</h3>
+        <div class="form-group">
+          <label for="name">Class Code:</label>
+          <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+        </div>
+        <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
+    </form>
+    <div data-role = "footer" class="MathWord">
+        <h1>Math Word of the Day:</h1>
+        <h2>Arithmetic Mean - the sum of a collection of numbers divided by the number of numbers in the collection.
+    </div>
+
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
