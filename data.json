@@ -1,0 +1,25 @@
+{
+  "courses": [
+    {
+      "courseName": "Algebra"
+    },
+    {
+      "courseName": "Arithmetic"
+    }
+  ],
+
+  "homeworks": [
+    {
+      "homeworkName": "Homework 1"
+    },
+    {
+      "homeworkName": "Homework 2"
+    },
+    {
+      "homeworkName": "Homework 3"
+    },
+    {
+      "homeworkName": "Homework 4"
+    }
+  ]
+}

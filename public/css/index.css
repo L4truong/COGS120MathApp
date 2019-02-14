@@ -46,8 +46,13 @@ body {
      background-image: url("../Math hw.jpg");
 }
 
-h1, h2 {
+h1 {
      text-align: center;
+}
+
+h3 {
+    margin-left: 5px;
+    margin-right: 1px;
 }
 
 hr {
@@ -57,6 +62,11 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+.MathWord {
+    position: fixed;
+    bottom: 0;
 }
 
 /*.project a {

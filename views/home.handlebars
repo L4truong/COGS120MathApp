@@ -22,21 +22,29 @@
 
     <h1>Enrolled Classes:</h1>
     
-    <div class="class" id="class1">
+    <div class="container">
+    {{#each courses}}
+    <div class="course" style="text-align:left;">
+      <h2><a href='{{courseName}}.html'>{{courseName}}</a></h2>
+    </div>
+    {{/each}}
+
+    <!--
+    <div class="course" id="course1">
         <a href="Algebra.html" class="thumbnail">
         <h2>Algebra</h2> 
     </a>
     </div>
 
-    <div class="classes" id="class2">
+    <div class="course" id="course2">
         <a href="Arithmetic.html" class="thumbnail">
         <h2>Arithmetic</h2> 
     </a>
-    </div>
+    </div> -->
 
     <!--<form id="addClassForm" role="form" method="get" action="/add"> -->
     <form>
-        <h3>Add a class</h3>
+      <h3>Add a class</h3>
         <div class="form-group">
           <label for="name">Class Code:</label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
@@ -44,12 +52,13 @@
         <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
     </form>
     
-    <hr/>
-    
     <div data-role = "footer" class="MathWord">
+      <hr/>
         <h1>Math Word of the Day:</h1>
-        <h2>Gradient</h2><h3>How steep a line is. Also known as "Slope."</h3>
+        <div style="text-align:center;">
+        <h2>Gradient</h2></div><h3>How steep a line is. Also known as "Slope."</h3>
     </div>
+  </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>

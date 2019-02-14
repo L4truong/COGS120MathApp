@@ -1,4 +1,8 @@
+// Get all of our friend data
+var data = require('../data.json');
+
 exports.view = function(req, res){
 	console.log("Initializing home.js");
-	res.render('home');
+	console.log(data);
+	res.render('home', data);
 };
