@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>My HCI Friends</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/hci-friends.css">
+
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/hci-friends.js"></script>
+  <script> 
+    window.onload = function() {
+      document.getElementById("signupButton").onclick = function studentClick() { 
+        console.log("Sign up button clicked!"); window.location.replace('home');
+      }
+    }; 
+  </script>
+</head>
+
+<body>
+<div class="container">
+  <h1>Sign up</h1>
+  <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+  </div>
+  <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="text" class="form-control" id="password" placeholder="Password" name="password">
+  </div>
+  <input type="signup" id="signupButton" class="btn btn-default" value="Sign up">
+</div>
+</body>
+</html>
