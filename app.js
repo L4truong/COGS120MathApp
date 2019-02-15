@@ -12,6 +12,7 @@ var login = require('./routes/login');
 var home = require('./routes/home');
 var signup = require('./routes/signup');
 var homework = require('./routes/homework');
+var problem = require('./routes/problem');
 
 var app = express();
 
