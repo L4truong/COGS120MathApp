@@ -8,19 +8,19 @@
   "homeworks": [
     {
       "homeworkName": "Homework 1",
-      "homeworkURL": "homework1.html"
+      "homeworkURL": "Homework1.html"
     },
     {
       "homeworkName": "Homework 2",
-      "homeworkURL": "homework2.html"
+      "homeworkURL": "Homework2.html"
     },
     {
       "homeworkName": "Homework 3",
-      "homeworkURL": "homework3.html"
+      "homeworkURL": "Homework3.html"
     },
     {
       "homeworkName": "Homework 4",
-      "homeworkURL": "homework4.html"
+      "homeworkURL": "Homework4.html"
     }
   ]
 }
