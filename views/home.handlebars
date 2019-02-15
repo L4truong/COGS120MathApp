@@ -14,7 +14,7 @@
 <body>
   <div data-role = "page" id = "pageone">
     <div data-role = "header">
-        <button class="btn"><i class="fa fa-bars"></i></button>
+        <button style="margin: 5px" class="btn"><i class="fa fa-bars"></i></button>
         <h1>Home</h1>
     </div>
 
@@ -22,10 +22,18 @@
 
     <h1>Enrolled Classes:</h1>
     
+    <!-- 
     <div class="container">
     {{#each courses}}
     <div class="course" style="text-align:left;">
       <h2><a href='{{courseName}}.html'>{{courseName}}</a></h2>
+    </div>
+    {{/each}} -->
+
+    <div class="container">
+    {{#each courses}}
+    <div class="course" style="text-align:left;">
+      <h2><a href='./homework'>{{courseName}}</a></h2>
     </div>
     {{/each}}
 
@@ -44,13 +52,15 @@
 
     <!--<form id="addClassForm" role="form" method="get" action="/add"> -->
     <form>
-      <h3>Add a class</h3>
+      <h2>Add a class</h2>
         <div class="form-group">
           <label for="name">Class Code:</label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
         </div>
         <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
     </form>
+
+    </div>
     
     <div data-role = "footer" class="MathWord">
       <hr/>
@@ -58,7 +68,6 @@
         <div style="text-align:center;">
         <h2>Gradient</h2></div><h3>How steep a line is. Also known as "Slope."</h3>
     </div>
-  </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>

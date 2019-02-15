@@ -10,16 +10,20 @@
 
   "homeworks": [
     {
-      "homeworkName": "Homework 1"
+      "homeworkName": "Homework 1",
+      "homeworkURL": "homework1.html"
     },
     {
-      "homeworkName": "Homework 2"
+      "homeworkName": "Homework 2",
+      "homeworkURL": "homework2.html"
     },
     {
-      "homeworkName": "Homework 3"
+      "homeworkName": "Homework 3",
+      "homeworkURL": "homework3.html"
     },
     {
-      "homeworkName": "Homework 4"
+      "homeworkName": "Homework 4",
+      "homeworkURL": "homework4.html"
     }
   ]
 }
