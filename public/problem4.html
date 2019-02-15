@@ -8,29 +8,33 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Problem</title>
+    <title>Problem 4</title>
 </head>
 <body>
-<button style="margin: 5px" class="btn"><i class="fa fa-bars"></i></button>
-<h1>Problem 4</h1>
-<hr/>
-<div class="container" style="text-align:center;">
-<div class="problem" id="problem4">
-    <h2>y=2x+4, 6x+y = 36, What is y?</h2>
-</div>
-<input type="number" id = "answer" class="answer">
-    <button class="btn btn-default" onclick="myFunction()" class="answer">Submit</button>
-<h1 id="direction"></h1>
+    <button style="margin: 5px" class="btn"><i class="fa fa-bars"></i></button>
+    <h1>Problem 4</h1>
+    <hr/>
 
+    <div class="container" style="text-align:center;">
+    <div class="problem" id="problem4">
+        <h2>y=2x+4, 6x+y = 36, What is y?</h2>
+    </div>
 
-<div style="text-align:center;">
-    <input type="btn btn-default" value="Back" class="btn btn-default" onclick="history.back()">
-</div>
+    <div style="text-align:center;">
+        <input type="number" id = "answer" class="answer">
+        <button class="btn btn-default" onclick="myFunction()" class="answer">Submit</button>
+    <h1 id="direction"></h1>
+    </div>
 
-<div style="text-align:center;">
-    <button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>
-</div>
-<script>
+    <div style="text-align:center;">
+        <input type="btn btn-default" value="Back" class="btn btn-default" onclick="history.back()">
+    </div>
+
+    <div style="text-align:center;">
+        <button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>
+    </div>
+
+    <script>
     function myFunction() {
 
         if(document.getElementById("answer").value == "12"){
@@ -40,20 +44,22 @@
             document.getElementById("direction").innerHTML = "Wrong";
         }
     }
-</script>
-<div class="example" style="text-align:left;">
-    <a href="Examples.html">
-        <h3>Examples</h3>
-    </a>
-</div>
+    </script>
+    
+    <div class="example" style="text-align:left;">
+        <a href="Examples.html">
+            <h3>Examples</h3>
+        </a>
+    </div>
 
-<div class="hint" style="text-align:left;">
-    <a href="Hints.html">
-        <h3>Hints</h3>
-    </a>
-</div>
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <div class="hint" style="text-align:left;">
+        <a href="Hints.html">
+            <h3>Hints</h3>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </div>
 </body>
 </html>
