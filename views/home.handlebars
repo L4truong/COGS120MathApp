@@ -14,59 +14,31 @@
 <body>
   <div data-role = "page" id = "pageone">
     <div data-role = "header">
-        <button style="margin: 5px" class="btn"><i class="fa fa-bars"></i></button>
-        <h1>Home</h1>
+      <button style="margin: 5px" class="btn"><i class="fa fa-bars"></i></button>
+      <h1>Enrolled Classes</h1>
     </div>
-
     <hr/>
-
-    <h1>Enrolled Classes:</h1>
-    
-    <!-- 
     <div class="container">
-    {{#each courses}}
-    <div class="course" style="text-align:left;">
-      <h2><a href='{{courseName}}.html'>{{courseName}}</a></h2>
-    </div>
-    {{/each}} -->
-
-    <div class="container">
-    {{#each courses}}
-    <div class="course" style="text-align:left;">
-      <h2><a href='./homework'>{{courseName}}</a></h2>
-    </div>
-    {{/each}}
-
-    <!--
-    <div class="course" id="course1">
-        <a href="Algebra.html" class="thumbnail">
-        <h2>Algebra</h2> 
-    </a>
+      {{#each courses}}
+      <div class="course" style="text-align:left;">
+        <h2><a href='./homework'>{{courseName}}</a></h2>
+      </div>
+      {{/each}}
     </div>
 
-    <div class="course" id="course2">
-        <a href="Arithmetic.html" class="thumbnail">
-        <h2>Arithmetic</h2> 
-    </a>
-    </div> -->
-
-    <!--<form id="addClassForm" role="form" method="get" action="/add"> -->
-    <form>
-      <h2>Add a class</h2>
+    <div class="AddClass">
+      <h3>Add a class</h3>
         <div class="form-group">
           <label for="name">Class Code:</label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
         </div>
-        <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
-    </form>
-
     </div>
+
     
-    <div data-role = "footer" class="MathWord">
-      <hr/>
-        <h1>Math Word of the Day:</h1>
-        <div style="text-align:center;">
-        <h2>Gradient</h2></div><h3>How steep a line is. Also known as "Slope."</h3>
+    <div data-role="footer" class="MathWord" style="text-align:center;">
+        <h4>Word of the Day</h4>
+        <h5>Gradient: An incline, often referred to as "slope".</h5>
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>

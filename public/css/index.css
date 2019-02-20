@@ -39,6 +39,20 @@
 }
 .btn {
     text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#teacherLoginButton {
+    color: #9e9b98;
+}
+
+#signupButton {
+    color: #9e9b98;
+}
+
+#backButton {
+    color: #9e9b98;
 }
 
 body {
@@ -49,10 +63,36 @@ h1 {
      text-align: center;
 }
 
+h2 {
+    margin-left: 15px;
+    margin-top: 2px;
+    font-size: 25px;
+}
+
 h3 {
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+h4 {
     margin-left: 10px;
     margin-right: 1px;
+    font-size: 20px;
 }
+
+h5 {
+    margin-left: 10px;
+    margin-right: 1px;
+    font-size: 7px;
+}
+
+h6 {
+    margin-left: 10px;
+    margin-right: 1px;
+    font-size: 4px;
+
+}
+
 
 hr {
     display: block;
@@ -63,9 +103,31 @@ hr {
     padding: 0;
 }
 
+.AddClass {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    align-content: center;
+}
+
 .MathWord {
     position: fixed;
     bottom: 0;
+    color: #9e9b98;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /*.project a {
