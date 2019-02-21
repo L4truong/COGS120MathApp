@@ -77,22 +77,20 @@ h3 {
 h4 {
     margin-left: 10px;
     margin-right: 1px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h5 {
     margin-left: 10px;
     margin-right: 1px;
-    font-size: 7px;
+    font-size: 11px;
 }
 
 h6 {
     margin-left: 10px;
     margin-right: 1px;
     font-size: 4px;
-
 }
-
 
 hr {
     display: block;
@@ -104,21 +102,36 @@ hr {
 }
 
 .AddClass {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 10%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     align-content: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .MathWord {
+    width: max-content;
     position: fixed;
-    bottom: 0;
+    bottom: 5%;
     color: #9e9b98;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+#submitBtn {
+    margin-top: 10px;
+}
+
+.navBar {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
 }
 
 .center {
@@ -129,7 +142,3 @@ hr {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
-/*.project a {
-     margin-left: 2em;
-} */
