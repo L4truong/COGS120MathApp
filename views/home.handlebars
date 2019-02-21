@@ -32,30 +32,20 @@
         <div class="form-group">
           <h3>Add a class</h3>
           <input type="text" class="form-control" id="name" placeholder="Class code" name="name">
-          <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
+          <div class="popup" onclick="myFunction()">
+            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
+            <span class="popuptext" id="myPopup">Invalid class code!</span>
+          </div>
         </div>
-    </div> 
-
-    <!--
-    <div class="AddClass">
-      <h3>Add a class</h3>
-      <input type="number" id = "answer" class="answer" placeholder="Class code">
-      <button class="btn btn-default" id="submitBtn"  onclick="myFunction()" class="answer" value="Add Class">Submit</button>
-      <h1 id="direction"></h1> 
-      </div>
     </div>
 
     <script>
-        function myFunction() {
-
-            if(document.getElementById("answer").value == "123124124912412391823123"){
-                document.getElementById("direction").innerHTML = "Correct";
-      }
-      else{
-                document.getElementById("direction").innerHTML = "Invalid class code";
-      }
-        }
-    </script> -->
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
     
     <div class="MathWord" style="text-align:center;">
         <h4>Word of the Day</h4>
