@@ -126,6 +126,11 @@ hr {
     margin-top: 10px;
 }
 
+#facebookButton {
+    margin-top: 2px;
+    text-align: center;
+}
+
 .navBar {
     margin: auto;
     width: 100%;

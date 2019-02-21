@@ -12,11 +12,16 @@
 
   <script src="js/jquery-1.11.0.js"></script>
   <script src="js/bootstrap.js"></script>
+
+  {{> facebook}}
+  <script src="/js/facebook.js"></script>
+
   <script> 
     window.onload = function(){ 
       document.getElementById("studentLoginButton").onclick = function studentClick() { console.log("Student button clicked!"); window.location.replace('home'); }
       document.getElementById("teacherLoginButton").onclick = function studentClick() { console.log("Teacher button licked!"); window.location.replace('home'); }
       document.getElementById("signupButton").onclick = function studentClick(req, res) { console.log("Sign up button clicked!"); window.location.replace("signup"); }
+      document.getElementById("facebookButton").onclick = function studentClick(req, res) { console.log("Facebook button clicked!"); window.location.replace('home'); }
     }; 
   </script>
 </head>
@@ -44,6 +49,11 @@
 
     <div>
       <input type="btn btn-default" id="signupButton" class="btn btn-default" value="Sign up">
+    </div>
+
+    <div>
+      <fb:login-button id="facebookButton" scope="public_profile,email" onlogin="checkLoginState(); window.location.replace('home');">
+      </fb:login-button>
     </div>
   </div>
 </div>
