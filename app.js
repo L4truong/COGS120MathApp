@@ -43,6 +43,8 @@ app.get('/signup', signup.view);
 app.get('/', login.view);
 app.get('/home', home.view);
 app.get('/homework', homework.view);
+app.get('/settings', settings.view);
+app.get('/problem', problem.view);
 //app.get('/add', add.addFriend);
 // Example route
 // app.get('/users', user.list);

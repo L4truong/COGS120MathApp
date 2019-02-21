@@ -11,7 +11,7 @@
 	<title>Problem 1</title>
 </head>
 <body>
-	<button style="margin: 5px" class="btn"><a href="settings.html"><i class="fa fa-bars"></i> Settings</a></button>
+	<button style="margin: 5px" class="btn"><a href="/settings"><i class="fa fa-bars"></i> Settings</a></button>
     <h1>Problem 1</h1>
 
     <hr/>
@@ -25,15 +25,6 @@
     	<input type="number" id = "answer" class="answer">
     	<button class="btn btn-default" onclick="myFunction()" class="answer">Submit</button>
 	<h1 id="direction"></h1> 
-	</div>
-
-	<div class="navBar" style="left: 0%;">
-		<div>
-			<input type="btn btn-default" value="Back" class="btn btn-default" onclick="history.back()">
-		</div>
-		<div>
-			<button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>
-		</div>
 	</div>
 
 	<script>
@@ -58,6 +49,15 @@
 		<a href="Hints.html">
 			<h2>Hints</h2>
 		</a>
+	</div>
+
+	<div class="navBar">
+		<div>
+			<input type="btn btn-default" value="Back" class="btn btn-default" onclick="history.back()">
+		</div>
+		<div>
+			<button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
