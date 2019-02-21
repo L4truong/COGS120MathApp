@@ -20,23 +20,21 @@
     <hr/>
     <div class="container">
       {{#each courses}}
-      <div class="course" style="text-align:left;">
+      <div class="course" style="text-align:left; margin-top: 10px">
         <h2><a href='./homework'>{{courseName}}</a></h2>
       </div>
       {{/each}}
     </div>
 
     <div class="AddClass">
-      <h3>Add a class</h3>
         <div class="form-group">
-          <label for="name">Class Code:</label>
-          <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+          <h3>Add a class</h3>
+          <input type="text" class="form-control" id="name" placeholder="Class code" name="name">
           <input type="submit" id="submitBtn" class="btn btn-default" value="Add Class"></input>
         </div>
     </div>
-
     
-    <div data-role="footer" class="MathWord" style="text-align:center;">
+    <div class="MathWord" style="text-align:center;">
         <h4>Word of the Day</h4>
         <h5>Gradient: An incline, often referred to as "slope".</h5>
     </div>

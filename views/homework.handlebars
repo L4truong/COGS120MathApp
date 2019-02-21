@@ -16,17 +16,15 @@
   <div data-role = "page" id = "pageone">
     <div data-role = "header">
         <button style="margin: 5px" class="btn"><i class="fa fa-bars"></i></button>
-        <h1>Enrolled Classes</h1>
+        <h1>Algebra</h1>
     </div>
 
     <hr/>
-
-    <h1>Algebra</h1>
     
     <div class="container">
     {{#each homeworks}}
-    <div class="homework" style="text-align:left;">
-      <h3><a href='{{homeworkURL}}'>{{homeworkName}}</a></h3>
+    <div class="homework" style="text-align:left; margin-top: 10px">
+      <h2><a href='{{homeworkURL}}'>{{homeworkName}}</a></h2>
     </div>
     {{/each}}
 
@@ -55,11 +53,11 @@
     </a>
     </div> -->
 
-  <div style="text-align:center;">
+ 
+</div>
+ <div class="navBar">
     <input type="btn btn-default" value="Back" class="btn btn-default" onclick="history.back()">
   </div>
-</div>
-
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
