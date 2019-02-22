@@ -14,6 +14,8 @@ var signup = require('./routes/signup');
 var homework = require('./routes/homework');
 var problem = require('./routes/problem');
 var settings = require('./routes/settings');
+var about = require('./routes/about');
+var support = require('./routes/support');
 
 var app = express();
 
@@ -45,6 +47,8 @@ app.get('/home', home.view);
 app.get('/homework', homework.view);
 app.get('/settings', settings.view);
 app.get('/problem', problem.view);
+app.get('/support', support.view);
+app.get('/about',about.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
