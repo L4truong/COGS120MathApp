@@ -48,7 +48,7 @@ app.get('/homework', homework.view);
 app.get('/settings', settings.view);
 app.get('/problem', problem.view);
 app.get('/support', support.view);
-app.get('/about',about.view);
+app.get('/about', about.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
