@@ -25,22 +25,22 @@
     {
       "problemName": "Problem 2",
       "problemId": "problem2",
-      "problem": "2x + 2 = 4, what is x?"
+      "problem": "10y + 5y = 90, what is y?"
     },
     {
       "problemName": "Problem 3",
       "problemId": "problem3",
-      "problem": "2x + 2 = 4, what is x?"
+      "problem": "What is the slope of y = 3x + 5?"
     },
     {
       "problemName": "Problem 4",
       "problemId": "problem4",
-      "problem": "2x + 2 = 4, what is x?"
+      "problem": "5x - 4 + 2(x - 4) = 16, what is x?"
     },
     {
       "problemName": "Problem 5",
       "problemId": "problem5",
-      "problem": "2x + 2 = 4, what is x?"
+      "problem": "7x - 2 + 4y = 34. y = 6, what is x?"
     }
   ]
 }
