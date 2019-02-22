@@ -39,16 +39,30 @@
     </script>
     
     <div class="example" style="text-align:left;">
-        <a href="Examples.html">
+        <a onclick="exampleFunction()">
             <h2>Examples</h2>
         </a>
+        <h3 id="example4"></h3>
     </div>
 
+    <script>
+        function exampleFunction() {
+            document.getElementById("example4").innerHTML = "Example 1: 2x - 2 + 3(x + 2) = 34, what is x? 2x - 2 + 3x + 6 = 34. 5x + 4 = 34 --> 5x = 34 - 4 --> 5x = 30. x = 6";
+        }
+    </script>
+
     <div class="hint" style="text-align:left;">
-        <a href="Hints.html">
+        <a onclick="hintFunction()">
             <h2>Hints</h2>
         </a>
+        <h3 id="hint4"></h3>
     </div>
+
+    <script>
+        function hintFunction() {
+            document.getElementById("hint4").innerHTML = "Hint 1: First, complete all calculations involving parentheses. Hint 2: Next, combine like terms.";
+        }
+    </script>
 
     <div class="navBar">
         <div>

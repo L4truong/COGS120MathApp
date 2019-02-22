@@ -40,16 +40,30 @@
 	</script>
 
 	<div class="example" style="text-align:left;">
-		<a href="Examples.html">
+		<a onclick="exampleFunction()">
 			<h2>Examples</h2>
 		</a>
+		<h3 id="example1"></h3>
 	</div>
 
+	<script>
+		function exampleFunction() {
+			document.getElementById("example1").innerHTML = "Example 1: x + 4 = 6, what is x? x = 6 - 4 --> x = 2. Example 2: 4x + 4 = 12, what is x? 4x = 16 - 4 --> 4x = 12 --> x = 12/4 x = 3";
+		}
+	</script>
+
 	<div class="hint" style="text-align:left;">
-		<a href="Hints.html">
+		<a onclick="hintFunction()">
 			<h2>Hints</h2>
 		</a>
+		<h3 id="hint1"></h3>
 	</div>
+
+	<script>
+		function hintFunction() {
+			document.getElementById("hint1").innerHTML = "Hint 1: Here, we will do the first step for you: 2x = 4 - 2";
+		}
+	</script>
 
 	<div class="navBar">
 		<div>

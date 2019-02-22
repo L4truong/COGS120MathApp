@@ -39,16 +39,30 @@
         }
     </script>
     <div class="example" style="text-align:left;">
-        <a href="Examples.html">
+        <a onclick="exampleFunction()">
             <h2>Examples</h2>
         </a>
+        <h3 id="example2"></h3>
     </div>
 
+    <script>
+        function exampleFunction() {
+            document.getElementById("example2").innerHTML = "Example 1: 2y + y = 9, what is y? 3y = 9 --> y = 9/3. y = 3 Example 2: 20y + 10y = 120, what is y? 30y = 120 --> y = 120/30. y = 4";
+        }
+    </script>
+
     <div class="hint" style="text-align:left;">
-        <a href="Hints.html">
+        <a onclick="hintFunction()">
             <h2>Hints</h2>
         </a>
+        <h3 id="hint2"></h3>
     </div>
+
+    <script>
+        function hintFunction() {
+            document.getElementById("hint2").innerHTML = "Hint 1: First, try to combine like terms. Hint 2: Here, we will do the first step for you: 10y + 5y = 15y. We now have 15y = 90";
+        }
+    </script>
 
     <div class="navBar">
         <div>

@@ -39,16 +39,30 @@
     </script>
 
     <div class="example" style="text-align:left;">
-        <a href="Examples.html">
+        <a onclick="hintFunction()">
             <h2>Examples</h2>
         </a>
+        <h3 id="example5"></h3>
     </div>
 
+    <script>
+        function exampleFunction() {
+            document.getElementById("example5").innerHTML = "Example 1: 5x - 5 + 4y = 12. y = 3, what is x? 5x - 5 + 4*3 = 12 --> 5x - 5 + 12 = 12. 5x + 7 = 12 --> 5x = 12 -7 --> 5x = 5. 5x = 5 --> x = 1";
+        }
+    </script>
+
     <div class="hint" style="text-align:left;">
-        <a href="Hints.html">
+        <a onclick="hintFunction()">
             <h2>Hints</h2>
         </a>
+        <h3 id="hint5"></h3>
     </div>
+
+    <script>
+        function hintFunction() {
+            document.getElementById("hint1").innerHTML = "Hint 1: Plug in y and combine like terms.";
+        }
+    </script>
 
     <div class="navBar">
         <div>
