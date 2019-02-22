@@ -45,9 +45,6 @@ app.get('/home', home.view);
 app.get('/homework', homework.view);
 app.get('/settings', settings.view);
 app.get('/problem', problem.view);
-//app.get('/add', add.addFriend);
-// Example route
-// app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

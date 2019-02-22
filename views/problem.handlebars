@@ -21,11 +21,27 @@
 
     <hr/>
 
-        <div class="navBar">
-            <input type="button" value="Back" class="btn btn-default" onclick="history.back()">
+    <div class="container" style="margin-top: 22px;">
+        {{#each problems}}
+        <div class="problem" id="{{problemId}}">
+            <h2>{{problemName}}</h2>
+            <div style="text-align: center;">
+                {{problem}}
+            </div>
         </div>
+        {{/each}}
+    </div>
 
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+    <div class="navBar">
+        <div>
+            <input type="btn btn-default" value="Back" class="btn btn-default" onclick="history.back()">
+        </div>
+        <div>
+            <button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

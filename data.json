@@ -14,5 +14,33 @@
       "homeworkName": "Homework 2",
       "homeworkURL": "Homework2.html"
     }
+  ],
+
+  "problems": [
+    {
+      "problemName": "Problem 1",
+      "problemId": "problem1",
+      "problem": "2x + 2 = 4, what is x?"
+    },
+    {
+      "problemName": "Problem 2",
+      "problemId": "problem2",
+      "problem": "2x + 2 = 4, what is x?"
+    },
+    {
+      "problemName": "Problem 3",
+      "problemId": "problem3",
+      "problem": "2x + 2 = 4, what is x?"
+    },
+    {
+      "problemName": "Problem 4",
+      "problemId": "problem4",
+      "problem": "2x + 2 = 4, what is x?"
+    },
+    {
+      "problemName": "Problem 5",
+      "problemId": "problem5",
+      "problem": "2x + 2 = 4, what is x?"
+    }
   ]
 }
