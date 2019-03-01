@@ -35,12 +35,14 @@
             }
             else{
                 document.getElementById("direction").innerHTML = "Try again";
+                document.getElementById("examples").style.display = "inline";
+                document.getElementById("hints").style.display = "inline";
             }
         }
     </script>
 
     <div class="example" style="text-align:left;">
-        <a onclick="exampleFunction()">
+        <a onclick="exampleFunction()" id="examples" style="display: none;">
             <h2>Examples</h2>
         </a>
         <h3 id="example1"></h3>
@@ -54,7 +56,7 @@
     </script>
 
     <div class="hint" style="text-align:left;">
-        <a onclick="hintFunction()">
+        <a onclick="hintFunction()" id="hints" style="display: none;">
             <h2>Hints</h2>
         </a>
         <h3 id="hint1"></h3>
