@@ -1,7 +1,7 @@
 repo
 ====
 
-COGS120/CSE170 A5 Skeleton
+COGS120/CSE170 MathPal App
 
 Members:
 	- Loc Truong

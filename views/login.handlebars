@@ -19,17 +19,17 @@
   <script> 
     window.onload = function(){ 
       document.getElementById("studentLoginButton").onclick = function studentClick() { console.log("Student button clicked!"); window.location.replace('home'); }
-      document.getElementById("teacherLoginButton").onclick = function studentClick() { console.log("Teacher button licked!"); window.location.replace('home'); }
+      /*document.getElementById("teacherLoginButton").onclick = function studentClick() { console.log("Teacher button licked!"); window.location.replace('home'); } */
       document.getElementById("signupButton").onclick = function studentClick(req, res) { console.log("Sign up button clicked!"); window.location.replace("signup"); }
       document.getElementById("facebookButton").onclick = function studentClick(req, res) { console.log("Facebook button clicked!"); window.location.replace('home'); }
     }; 
   </script>
 </head>
 
-<body>
+<body> <!--
   <div id="header" style="text-align: center;">
       <p id="logo" style="margin-top: 100px;">MathPal</p>
-    </div>
+    </div> -->
 
   <div class="container">
     <div class="center">
@@ -46,10 +46,10 @@
       <div>
         <input type="btn btn-default" id="studentLoginButton" class="btn btn-default" value="Log in as Student">
       </div>
-
+<!--
       <div>
         <input type="btn btn-default" id="teacherLoginButton" class="btn btn-default" value="Log in as Teacher"> 
-      </div>
+      </div> -->
 
       <div>
         <input type="btn btn-default" id="signupButton" class="btn btn-default" value="Sign up">

@@ -16,6 +16,8 @@ var problem = require('./routes/problem');
 var settings = require('./routes/settings');
 var about = require('./routes/about');
 var support = require('./routes/support');
+var page_A = require('./routes/page_A');
+var page_B = require('./routes/page_B');
 
 var app = express();
 
@@ -49,6 +51,8 @@ app.get('/settings', settings.view);
 app.get('/problem', problem.view);
 app.get('/support', support.view);
 app.get('/about', about.view);
+app.get('/page_A', page_A.view);
+app.get('/page_B', page_B.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
