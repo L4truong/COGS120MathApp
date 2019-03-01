@@ -19,6 +19,7 @@ var support = require('./routes/support');
 var page_A = require('./routes/page_A');
 var page_B = require('./routes/page_B');
 var page_B_2 = require('./routes/page_B_2');
+var page_B_3 = require('./routes/page_B_3');
 
 var app = express();
 
@@ -55,6 +56,7 @@ app.get('/about', about.view);
 app.get('/page_A', page_A.view);
 app.get('/page_B', page_B.view);
 app.get('/page_B_2', page_B_2.view);
+app.get('/page_B_3', page_B_3.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
