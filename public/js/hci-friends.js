@@ -20,6 +20,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+	$(".hint").click(function() {
+		ga("send", "event", "Hints", "click");
+	});
 }
 
 /*function anagrammedName(name) {
