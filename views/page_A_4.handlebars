@@ -8,7 +8,7 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Problem 3</title>
+    <title>Problem 4</title>
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -23,59 +23,55 @@ ga('send', 'pageview');
 </head>
 <body>
     <button style="margin: 5px" class="btn"><a href="/settings"><i class="fa fa-bars"></i> Settings</a></button>
-    <h1>Problem 3</h1>
+    <h1>Problem 4</h1>
     <hr/>
-    
+
     <div class="container" style="text-align:center;">
-    <div class="problem" id="problem3">
-        <h2>What is the slope of y = 3x + 5?</h2>
+    <div class="problem" id="problem4">
+        <h2>5x - 4 + 2(x - 4) = 23, what is x?</h2>
     </div>
 
     <div style="text-align:center;">
         <input type="number" id = "answer" class="answer">
         <button class="btn btn-default" onclick="myFunction()" class="answer">Submit</button>
-        <button class="btn btn-default" id="next" onclick="window.location.assign('page_B_4')" style="display: none;">Next</button>
-        <h1 id="direction"></h1>
+    <h1 id="direction"></h1>
     </div>
-    
+
     <script>
-        function myFunction() {
+    function myFunction() {
 
-            if(document.getElementById("answer").value == "3"){
-                document.getElementById("direction").innerHTML = "Correct";
-                document.getElementById("next").style.display = "inline";
-            }
-            else{
-                document.getElementById("direction").innerHTML = "Try again";
-                document.getElementById("examples").style.display = "inline";
-                document.getElementById("hints").style.display = "inline";
-            }
+        if(document.getElementById("answer").value == "5"){
+            document.getElementById("direction").innerHTML = "Correct";
         }
+        else{
+            document.getElementById("direction").innerHTML = "Try again";
+        }
+    }
     </script>
-
+    
     <div class="example" style="text-align:left;">
-        <a onclick="exampleFunction()" id="examples" style="display: none;">
+        <a onclick="exampleFunction()">
             <h2>Examples</h2>
         </a>
-        <h3 id="example3"></h3>
+        <h3 id="example4"></h3>
     </div>
 
     <script>
         function exampleFunction() {
-            document.getElementById("example3").innerHTML = "Example 1: What is the slope of y = 9x + 10?" + "<br/>" + "The slope is 9 (please refer to hints)";
+            document.getElementById("example4").innerHTML = "Example 1: 2x - 2 + 3(x + 2) = 34, what is x?" + "<br/>"+ "2x - 2 + 3x + 6 = 34" + "<br/>" + "5x + 4 = 34 --> 5x = 34 - 4 --> 5x = 30" + "<br/>" + "x = 6";
         }
     </script>
 
     <div class="hint" style="text-align:left;">
-        <a onclick="hintFunction()" id="hints" style="display: none;">
+        <a onclick="hintFunction()">
             <h2>Hints</h2>
         </a>
-        <h3 id="hint3"></h3>
+        <h3 id="hint4"></h3>
     </div>
 
     <script>
         function hintFunction() {
-            document.getElementById("hint3").innerHTML = "Hint 1: The slope-intercept form is y=mx+b, where m is the slope and b is the y-intercept. Thus, we are looking for m in our problem.";
+            document.getElementById("hint4").innerHTML = "Hint 1: First, complete all calculations involving parentheses." + "<br/>" + "<br/>" + "Hint 2: Next, combine like terms.";
             ga("send", "event", "Hints", "click");
         }
     </script>
@@ -83,7 +79,7 @@ ga('send', 'pageview');
 
     <div class="navBar">
         <div>
-            <input type="btn btn-default" value="Back" class="btn btn-default" onclick="window.location.replace('page_B_homework')">
+            <input type="btn btn-default" value="Back" class="btn btn-default" onclick="window.location.replace('page_A_homework')">
         </div>
         <!--<div>
             <button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>

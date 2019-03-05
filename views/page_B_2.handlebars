@@ -9,6 +9,17 @@
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Problem 2</title>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135536552-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 </head>
 <body>
 <button style="margin: 5px" class="btn"><a href="/settings"><i class="fa fa-bars"></i> Settings</a></button>
@@ -27,7 +38,6 @@
         <button class="btn btn-default" id="next" onclick="window.location.assign('page_B_3')" style="display: none;">Next</button>
         <h1 id="direction"></h1>
     </div>
-
 
     <script>
         function myFunction() {
@@ -48,12 +58,12 @@
         <a onclick="exampleFunction()" id="examples" style="display: none;">
             <h2>Examples</h2>
         </a>
-        <h3 id="example1"></h3>
+        <h3 id="example2"></h3>
     </div>
 
     <script>
         function exampleFunction() {
-            document.getElementById("example1").innerHTML = "Example 1: x + 4 = 6, what is x?" + "<br/>" + "x = 6 - 4 --> x = 2." +
+            document.getElementById("example2").innerHTML = "Example 2: x + 4 = 6, what is x?" + "<br/>" + "x = 6 - 4 --> x = 2." +
                     "<br />" + "<br/>" + "Example 2: 4x + 4 = 12, what is x?" + "<br/>"+"4x = 16 - 4 --> 4x = 12 --> x = 12/4" + "<br/>" + "x = 3";
         }
     </script>
@@ -62,24 +72,24 @@
         <a onclick="hintFunction()" id="hints" style="display: none;">
             <h2>Hints</h2>
         </a>
-        <h3 id="hint1"></h3>
+        <h3 id="hint2"></h3>
     </div>
 
     <script>
         function hintFunction() {
-            document.getElementById("hint1").innerHTML = "Hint 1: Here, we will do the first step for you: 2x = 4 - 2";
+            document.getElementById("hint2").innerHTML = "Hint 1: Here, we will do the first step for you: 2x = 4 - 2";
         }
     </script>
 </div>
 
-<div class="navBar">
-    <div>
-        <input type="btn btn-default" value="Back" class="btn btn-default" onclick="history.back()">
+    <div class="navBar">
+        <div>
+            <input type="btn btn-default" value="Back" class="btn btn-default" onclick="window.location.replace('page_B_homework')">
+        </div>
+        <!--<div>
+            <button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>
+        </div> -->
     </div>
-    <div>
-        <button class="btn btn-default" onclick="window.location.replace('home')"><i class="fa fa-home"></i> Home</button>
-    </div>
-</div>
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
