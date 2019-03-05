@@ -80,7 +80,7 @@ ga('send', 'pageview');
 	</script>
 
 	<div class="hint" style="text-align:left;">
-		<a onclick="hintFunction()">
+		<a class="hint" onclick="hintFunction()">
 			<h2>Hints</h2>
 		</a>
 		<h3 id="hint1"></h3>
@@ -89,6 +89,7 @@ ga('send', 'pageview');
 	<script>
 		function hintFunction() {
 			document.getElementById("hint1").innerHTML = "Hint 1: Here, we will do the first step for you: 2x = 4 - 2";
+			ga("send", "event", "Hints", "click");
 		}
 	</script>
 	</div>

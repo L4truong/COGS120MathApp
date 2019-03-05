@@ -72,6 +72,7 @@ ga('send', 'pageview');
     <script>
         function hintFunction() {
             document.getElementById("hint4").innerHTML = "Hint 1: First, complete all calculations involving parentheses." + "<br/>" + "<br/>" + "Hint 2: Next, combine like terms.";
+            ga("send", "event", "Hints", "click");
         }
     </script>
     </div>

@@ -74,6 +74,7 @@ ga('send', 'pageview');
     <script>
         function hintFunction() {
             document.getElementById("hint2").innerHTML = "Hint 1: First, try to combine like terms." + "<br/>" + "<br/>" + " Hint 2: Here, we will do the first step for you: 10y + 5y = 15y. We now have 15y = 90";
+            ga("send", "event", "Hints", "click");
         }
     </script>
     </div>
