@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Google Analytics Content Experiment code -->
+<!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
-k='190867657-2',d=document,l=d.location,c=d.cookie;
+k='190867657-6',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
 function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
 indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
@@ -56,7 +56,7 @@ ga('send', 'pageview');
 
         if(document.getElementById("answer").value == "3"){
             document.getElementById("direction").innerHTML = "Correct";
-            ga("send", "event", "A_Test", "click");
+            ga("send", "event", "AB_Test_3", "click");
         }
         else{
             document.getElementById("direction").innerHTML = "Try again";
@@ -113,7 +113,7 @@ ga('send', 'pageview');
 
     <script>
         function backFunction() {
-            ga("send", "event", "A_Test", "click");
+            ga("send", "event", "AB_Test_3", "click");
             window.location.replace('page_A_homework')
         }
     </script>
