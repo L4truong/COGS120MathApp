@@ -57,12 +57,18 @@ ga('send', 'pageview');
         <a onclick="exampleFunction()" id="examples" style="display: none;">
             <h2>Examples</h2>
         </a>
-        <h3 id="example3"></h3>
+        <h3 id="example3" style="display: none"></h3>
     </div>
 
     <script>
         function exampleFunction() {
-            document.getElementById("example3").innerHTML = "Example 1: What is the slope of y = 9x + 10?" + "<br/>" + "The slope is 9 (please refer to hints)";
+            var x = document.getElementById("example3");
+            x.innerHTML = "Example 1: What is the slope of y = 9x + 10?" + "<br/>" + "The slope is 9 (please refer to hints)";
+            if (x.style.display === "none") {
+                x.style.display = "inline";
+            } else {
+                x.style.display = "none";
+            }
         }
     </script>
 
@@ -70,12 +76,18 @@ ga('send', 'pageview');
         <a onclick="hintFunction()" id="hints" style="display: none;">
             <h2>Hints</h2>
         </a>
-        <h3 id="hint3"></h3>
+        <h3 id="hint3" style="display: none"></h3>
     </div>
 
     <script>
         function hintFunction() {
-            document.getElementById("hint3").innerHTML = "Hint 1: The slope-intercept form is y=mx+b, where m is the slope and b is the y-intercept. Thus, we are looking for m in our problem.";
+            var y = document.getElementById("hint3");
+            y.innerHTML = "Hint 1: The slope-intercept form is y=mx+b, where m is the slope and b is the y-intercept. Thus, we are looking for m in our problem.";
+            if (y.style.display === "none") {
+                y.style.display = "inline";
+            } else {
+                y.style.display = "none";
+            }
             ga("send", "event", "Hints", "click");
         }
     </script>

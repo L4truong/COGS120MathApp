@@ -53,14 +53,20 @@ ga('send', 'pageview');
         <a onclick="exampleFunction()">
             <h2>Examples</h2>
         </a>
-        <h3 id="example2"></h3>
+        <h3 id="example2" style="display: none"></h3>
     </div>
 
     <script>
         function exampleFunction() {
-            document.getElementById("example2").innerHTML = "Example 1: 2y + y = 9, what is y?" + "<br/>"+ "3y = 9 --> y = 9/3" + "<br/>" + "y = 3 " +
+            var x = document.getElementById("example2");
+            x.innerHTML = "Example 1: 2y + y = 9, what is y?" + "<br/>"+ "3y = 9 --> y = 9/3" + "<br/>" + "y = 3 " +
                 "<br />" + "<br/>" + 
                 "Example 2: 20y + 10y = 120, what is y?" + "<br/>"+ "30y = 120 --> y = 120/30" + "<br/>" + "y = 4";
+            if (x.style.display === "none") {
+                x.style.display = "inline";
+            } else {
+                x.style.display = "none";
+            }
         }
     </script>
 
@@ -68,12 +74,18 @@ ga('send', 'pageview');
         <a onclick="hintFunction()">
             <h2>Hints</h2>
         </a>
-        <h3 id="hint2"></h3>
+        <h3 id="hint2" style="display: none"></h3>
     </div>
 
     <script>
         function hintFunction() {
-            document.getElementById("hint2").innerHTML = "Hint 1: First, try to combine like terms." + "<br/>" + "<br/>" + " Hint 2: Here, we will do the first step for you: 10y + 5y = 15y. We now have 15y = 90";
+            var y = document.getElementById("hint2");
+            y.innerHTML = "Hint 1: First, try to combine like terms." + "<br/>" + "<br/>" + " Hint 2: Here, we will do the first step for you: 10y + 5y = 15y. We now have 15y = 90";
+            if (y.style.display === "none") {
+                y.style.display = "inline";
+            } else {
+                y.style.display = "none";
+            }
             ga("send", "event", "Hints", "click");
         }
     </script>

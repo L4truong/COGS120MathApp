@@ -57,12 +57,18 @@ ga('send', 'pageview');
         <a onclick="exampleFunction()" id="examples" style="display: none;">
             <h2>Examples</h2>
         </a>
-        <h3 id="example4"></h3>
+        <h3 id="example4" style="display: none"></h3>
     </div>
 
     <script>
         function exampleFunction() {
-            document.getElementById("example4").innerHTML = "Example 1: 2x - 2 + 3(x + 2) = 34, what is x?" + "<br/>"+ "2x - 2 + 3x + 6 = 34" + "<br/>" + "5x + 4 = 34 --> 5x = 34 - 4 --> 5x = 30" + "<br/>" + "x = 6";
+            var x = document.getElementById("example4");
+            x.innerHTML = "Example 1: 2x - 2 + 3(x + 2) = 34, what is x?" + "<br/>"+ "2x - 2 + 3x + 6 = 34" + "<br/>" + "5x + 4 = 34 --> 5x = 34 - 4 --> 5x = 30" + "<br/>" + "x = 6";
+            if (x.style.display === "none") {
+                x.style.display = "inline";
+            } else {
+                x.style.display = "none";
+            }
         }
     </script>
 
@@ -70,12 +76,18 @@ ga('send', 'pageview');
         <a onclick="hintFunction()" id="hints" style="display: none;">
             <h2>Hints</h2>
         </a>
-        <h3 id="hint4"></h3>
+        <h3 id="hint4" style="display: none"></h3>
     </div>
 
     <script>
         function hintFunction() {
-            document.getElementById("hint4").innerHTML = "Hint 1: First, complete all calculations involving parentheses." + "<br/>" + "<br/>" + "Hint 2: Next, combine like terms.";
+            var y = document.getElementById("hint4");
+            y.innerHTML = "Hint 1: First, complete all calculations involving parentheses." + "<br/>" + "<br/>" + "Hint 2: Next, combine like terms.";
+            if (y.style.display === "none") {
+                y.style.display = "inline";
+            } else {
+                y.style.display = "none";
+            }
             ga("send", "event", "Hints", "click");
         }
     </script>

@@ -57,12 +57,18 @@ ga('send', 'pageview');
         <a onclick="exampleFunction()" id="examples" style="display: none;">
             <h2>Examples</h2>
         </a>
-        <h3 id="example5"></h3>
+        <h3 id="example5" style="display: none"></h3>
     </div>
 
     <script>
         function exampleFunction() {
-            document.getElementById("example5").innerHTML = "Example 1: 5x - 5 + 4y = 12. y = 3, what is x?" + "<br/>" +  "5x - 5 + 4*3 = 12 --> 5x - 5 + 12 = 12. 5x + 7 = 12 --> 5x = 12 -7 --> 5x = 5" + "<br/>" + "x = 5/5 --> x = 1";
+            var x = document.getElementById("example5");
+            x.innerHTML = "Example 1: 5x - 5 + 4y = 12. y = 3, what is x?" + "<br/>" +  "5x - 5 + 4*3 = 12 --> 5x - 5 + 12 = 12. 5x + 7 = 12 --> 5x = 12 -7 --> 5x = 5" + "<br/>" + "x = 5/5 --> x = 1";
+            if (x.style.display === "none") {
+                x.style.display = "inline";
+            } else {
+                x.style.display = "none";
+            }
         }
     </script>
 
@@ -70,12 +76,18 @@ ga('send', 'pageview');
         <a onclick="hintFunction()" id="hints" style="display: none;">
             <h2>Hints</h2>
         </a>
-        <h3 id="hint5"></h3>
+        <h3 id="hint5" style="display: none"></h3>
     </div>
 
     <script>
         function hintFunction() {
-            document.getElementById("hint5").innerHTML = "Hint 1: Plug in y and combine like terms.";
+            var y = document.getElementById("hint5");
+            y.innerHTML = "Hint 1: Plug in y and combine like terms.";
+            if (y.style.display === "none") {
+                y.style.display = "inline";
+            } else {
+                y.style.display = "none";
+            }
             ga("send", "event", "Hints", "click");
         }
     </script>
