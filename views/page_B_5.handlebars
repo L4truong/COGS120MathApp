@@ -34,7 +34,7 @@ ga('send', 'pageview');
     <div style="text-align:center;">
         <input type="number" id = "answer" class="answer">
         <button class="btn btn-default" onclick="myFunction()" class="answer">Submit</button>
-        <button class="btn btn-default" id="next" onclick="window.location.assign('page_B_homework')" style="display: none;">Finish</button>
+        <button class="btn btn-default" id="next" onclick="nextFunction()" style="display: none;">Finish</button>
         <h1 id="direction"></h1>
     </div>
 
@@ -44,12 +44,20 @@ ga('send', 'pageview');
             if(document.getElementById("answer").value == "2"){
                 document.getElementById("direction").innerHTML = "Correct";
                 document.getElementById("next").style.display = "inline";
+                ga("send", "event", "B_Test", "click");
             }
             else{
                 document.getElementById("direction").innerHTML = "Try again";
                 document.getElementById("examples").style.display = "inline";
                 document.getElementById("hints").style.display = "inline";
             }
+        }
+    </script>
+
+    <script>
+        function nextFunction(){
+            ga("send", "event", "B_Test", "click");
+            window.location.assign('page_B_homework')
         }
     </script>
 
@@ -88,7 +96,6 @@ ga('send', 'pageview');
             } else {
                 y.style.display = "none";
             }
-            ga("send", "event", "Hints", "click");
         }
     </script>
     </div>
