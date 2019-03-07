@@ -35,6 +35,7 @@ ga('send', 'pageview');
         <div style="text-align: center;">
         <input type="number" id = "answer" class="answer">
         <button class="btn btn-default" onclick="myFunction()" class="answer">Submit</button>
+        <button class="btn btn-default" id="next" onclick="nextFunction()" style="display: none;">Next</button>
         <h1 id="direction"></h1>
     </div>
 
@@ -43,14 +44,24 @@ ga('send', 'pageview');
 
             if(document.getElementById("answer").value == "6"){
                 document.getElementById("direction").innerHTML = "Correct";
+                document.getElementById("next").style.display = "inline";
             }
             else{
                 document.getElementById("direction").innerHTML = "Try again";
+                document.getElementById("examples").style.display = "inline";
+                document.getElementById("hints").style.display = "inline";
             }
         }
     </script>
+
+    <script>
+        function nextFunction(){
+            window.location.assign('Problem3.html');
+        }
+    </script>
+
     <div class="example" style="text-align:left;">
-        <a onclick="exampleFunction()">
+        <a onclick="exampleFunction()" id="examples" style="display: none;">
             <h2>Examples</h2>
         </a>
         <h3 id="example2" style="display: none"></h3>
@@ -71,7 +82,7 @@ ga('send', 'pageview');
     </script>
 
     <div class="hint" style="text-align:left;">
-        <a onclick="hintFunction()">
+        <a onclick="hintFunction()" id="hints" style="display: none;">
             <h2>Hints</h2>
         </a>
         <h3 id="hint2" style="display: none"></h3>
